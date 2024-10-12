@@ -189,8 +189,8 @@ if 'USE_AWS' in os.environ:
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
     # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_STORAGE}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_STORAGE}/'
     
 
 # Stripe
